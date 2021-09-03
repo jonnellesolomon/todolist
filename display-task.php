@@ -14,7 +14,7 @@
                     <?php echo $row['task'] ?>
                 </td>
                 <td class="edit">
-                    <a href="edit.php?edit_task=<?php echo $row['id']; ?>">Edit</a>
+                    <a href="editpage.php?edit_task=<?php echo $row['id']; ?>">Edit</a>
                 </td>
                 <td class="delete">
                     <a href="delete.php?del_task=<?php echo $row['id']; ?>">Delete</a>
