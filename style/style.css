@@ -1,0 +1,13 @@
+* {
+  font-family: "montserrat";
+  background-color: #d1d1d1;
+}
+
+.header h2 {
+  color: #242424;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  letter-spacing: 3px;
+}
+/*# sourceMappingURL=style.css.map */

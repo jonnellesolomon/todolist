@@ -1,8 +1,13 @@
+<form method="POST">
+  <input type="text" name="task"  placeholder="Update task" Required>
+  <input type="submit" name="update" value="Update">
+</form>
+
 <?php 
     include ("connection.php");
     $id = $_GET['edit_task']; // get id through query string
     $qry = mysqli_query($db,"SELECT * FROM tasks WHERE id='$id'"); // select query
-    $row = mysqli_fetch_array($qry); // fetch data
+    $data = mysqli_fetch_array($qry); // fetch data
 
     if(isset($_POST['update'])) // when click on Update button
     {
@@ -15,11 +20,5 @@
         } 	
     }
 ?>
-
-<form method="POST">
-  <input type="text" name="task" value="<?php echo $row['task'] ?>" placeholder="Enter task" Required>
-  <input type="submit" name="update" value="Update">
-</form>
-
 
 

@@ -1,0 +1,19 @@
+$black: rgb(36, 36, 36);
+$white: rgb(209, 209, 209);
+$purp: rgb(104, 83, 114);
+$font: 'montserrat';
+
+* {
+    font-family: $font;
+    background-color: $white;
+}
+
+.header {
+    h2 {
+        color: $black;
+        text-align: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        letter-spacing: 3px;
+    }
+}
