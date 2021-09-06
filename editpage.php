@@ -1,14 +1,25 @@
-<form method="POST">
-    <input type="text" name="task" class="task_input" required/>
-    <button type="submit" class="task_btn" name="submit">Update</button> <br>
-</form>
+<?php 
+    include ("connection.php");
+    $id = $_GET['edit_task']; // get id through query string
+    $qry = mysqli_query($db,"SELECT * FROM tasks WHERE id='$id'"); // select query
+    $row = mysqli_fetch_array($qry); // fetch data
 
-<?php
-    $sql = "SELECT id, task FROM tasks WHERE id=$link";
-    $link = $_GET['edit_task'];
-    echo $link;
-    if (isset($_GET[$link])) {
-        echo $_GET[$link];
+    if(isset($_POST['update'])) // when click on Update button
+    {
+        $task = $_POST['task'];
+        $edit = mysqli_query($db,"UPDATE tasks SET task='$task' WHERE id='$id'");
+        if($edit){
+            mysqli_close($db); // Close connection
+            header("location:index.php"); // redirects to all records page
+            exit;
+        } 	
     }
 ?>
+
+<form method="POST">
+  <input type="text" name="task" value="<?php echo $row['task'] ?>" placeholder="Enter task" Required>
+  <input type="submit" name="update" value="Update">
+</form>
+
+
 

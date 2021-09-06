@@ -26,16 +26,9 @@
             </thread>
 
             <tbody>
-                
-                    <td>
-                        <!-- <?php 
-                            include("display-id.php");
-                        ?> -->
-                    </td>
-                        <?php 
-                            include("display-task.php");
-                        ?>
-
+                <?php 
+                    include("display-task.php");
+                ?>
             </tbody>
         </table>
     </div>
