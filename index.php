@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <title>Todolist by Jonelle</title>
 </head>
 <body>
-    <div class="header">
+    <div class="add">
         <h2>Todolist</h2>
 
         <form method="POST" action="add.php">
@@ -17,14 +18,6 @@
         </form>
         
         <table>
-            <thread>
-                <tr>
-                    <th>#</th>
-                    <th>Task</th>
-                    <th>Action</th>
-                </tr>
-            </thread>
-
             <tbody>
                 <?php 
                     include("display-task.php");

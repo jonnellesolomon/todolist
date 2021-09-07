@@ -1,7 +1,18 @@
-<form method="POST">
-  <input type="text" name="task"  placeholder="Update task" Required>
-  <input type="submit" name="update" value="Update">
-</form>
+<?php 
+    include ("connection.php");
+    $task = $_GET['edit_task'];
+?>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Update Task</title>
+</head>
+    <h2 class="update_title">update your task</h2>
+    <form class="update" method="POST">
+        <input class="update_i" type="text" name="task"  placeholder="update #<?php echo $task ?>" Required>
+        <input class="update_b" type="submit" name="update" value="Update">
+    </form>
+    <a class="cancel" href="index.php">Cancel</a>
 
 <?php 
     include ("connection.php");
@@ -20,5 +31,7 @@
         } 	
     }
 ?>
+
+</html>
 
 

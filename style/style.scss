@@ -1,6 +1,8 @@
 $black: rgb(36, 36, 36);
-$white: rgb(209, 209, 209);
-$purp: rgb(104, 83, 114);
+$white: rgb(230, 227, 227);
+$blue: rgb(89, 124, 190);
+$red: rgb(251, 129, 129);
+
 $font: 'montserrat';
 
 * {
@@ -8,12 +10,181 @@ $font: 'montserrat';
     background-color: $white;
 }
 
-.header {
+.add {
     h2 {
         color: $black;
         text-align: center;
         padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding-bottom: 1rem;
         letter-spacing: 3px;
     }
+
+    form {
+        display: flex;
+        justify-content: center;
+
+        .task_input {
+            background-color: rgb(241, 241, 241);
+            padding: 1rem;
+            border: white solid;
+            border-radius: 2rem 0rem 0rem 1rem;
+            box-shadow: 0px 2px 5px grey;
+        }
+
+        .task_input:focus {
+            outline: none;
+        }
+
+        .task_btn {
+            background-color: $blue;
+            padding: 1rem 2rem 1rem 2rem;
+            color: rgb(240, 240, 240);
+            font-weight: bold;
+            border: $blue solid;
+            border-radius: 0rem 1rem 2rem 0rem;;
+            box-shadow: 1px 2px 5px grey;
+            letter-spacing: 1px;
+        }
+
+        .task_btn:hover {
+            box-shadow: 2px 3px 5px grey;
+        }
+
+        .task_btn:active {
+            background-color: $white;
+            border: white solid;
+            color: $black;
+        }
+    }
+
+    table {
+        padding-top: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        tbody {
+            padding-top: 2rem;
+
+            tr {
+                .task {
+                    padding: .5rem .5rem .5rem .5rem;
+                    color: $black;
+                    letter-spacing: 1px;
+                    font-weight: 500;
+                    border-bottom: .5px rgb(189, 189, 189) solid;
+                }
+
+                .edit {
+                    padding-left: 2rem;
+
+                    .editbtn {
+                        padding: .5rem 1.5rem .5rem 1.5rem;
+                        background-color: $blue;
+                        color: white;
+                        font-weight: 500;
+                        font-size: 13px;
+                        text-decoration: none;
+                        box-shadow: 1px 1px 2px grey;
+                        border-radius: 2px;
+                    }
+
+                    .editbtn:hover {
+                        box-shadow: 2px 3px 5px grey;
+                    }
+            
+                    .editbtn:active {
+                        background-color: $white;
+                        color: $black;
+                    }
+
+                    .deletebtn {
+                        padding: .5rem 1rem .5rem 1rem;
+                        background-color: $red;
+                        color: white;
+                        font-weight: 500;
+                        font-size: 13px;
+                        text-decoration: none;
+                        box-shadow: 1px 1px 2px rgb(133, 133, 133);
+                        border-radius: 2px;
+                    }
+
+                    .deletebtn:hover {
+                        box-shadow: 2px 3px 5px grey;
+                    }
+            
+                    .deletebtn:active {
+                        background-color: $white;
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.update_title {
+    color: $black;
+    text-align: center;
+    padding-top: 10rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+.update {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+
+    .update_i {
+        background-color: rgb(241, 241, 241);
+        padding: 1rem;
+        border: white solid;
+        border-radius: 2rem 0rem 0rem 1rem;
+        box-shadow: 0px 2px 5px grey;
+    }
+
+    .update_i:focus {
+        outline: none;
+    }
+
+    .update_b {
+        background-color: $blue;
+        padding: 1rem 2rem 1rem 2rem;
+        color: rgb(240, 240, 240);
+        font-weight: bold;
+        border: $blue solid;
+        border-radius: 0rem 1rem 2rem 0rem;;
+        box-shadow: 1px 2px 5px grey;
+        letter-spacing: 1px;
+    }
+
+    .update_b:hover {
+        box-shadow: 2px 3px 5px grey;
+    }
+
+    .update_b:active {
+        background-color: $white;
+        border: white solid;
+        color: $black;
+    }
+}
+
+.cancel {
+    color: $black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    padding-top: 2.5rem;
+    font-weight: 500;
+    padding-left: 13rem;
+}
+
+.cancel:hover {
+    text-shadow: 1px 2px 5px $blue;
+}
+
+.cancel:active {
+    color: white;
 }
