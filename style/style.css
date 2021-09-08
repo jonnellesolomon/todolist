@@ -46,8 +46,9 @@
 }
 
 .add form .task_btn:hover {
-  -webkit-box-shadow: 2px 3px 5px grey;
-          box-shadow: 2px 3px 5px grey;
+  -webkit-box-shadow: 3px 3px 5px grey;
+          box-shadow: 3px 3px 5px grey;
+  border-radius: 0rem 2rem 1rem 0rem;
 }
 
 .add form .task_btn:active {
@@ -104,6 +105,7 @@
 .add table tbody tr .edit .editbtn:hover {
   -webkit-box-shadow: 2px 3px 5px grey;
           box-shadow: 2px 3px 5px grey;
+  border-radius: 5rem;
 }
 
 .add table tbody tr .edit .editbtn:active {

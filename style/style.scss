@@ -41,13 +41,14 @@ $font: 'montserrat';
             color: rgb(240, 240, 240);
             font-weight: bold;
             border: $blue solid;
-            border-radius: 0rem 1rem 2rem 0rem;;
+            border-radius: 0rem 1rem 2rem 0rem;
             box-shadow: 1px 2px 5px grey;
             letter-spacing: 1px;
         }
 
         .task_btn:hover {
-            box-shadow: 2px 3px 5px grey;
+            box-shadow: 3px 3px 5px grey;
+            border-radius: 0rem 2rem 1rem 0rem;
         }
 
         .task_btn:active {
@@ -92,6 +93,7 @@ $font: 'montserrat';
 
                     .editbtn:hover {
                         box-shadow: 2px 3px 5px grey;
+                        border-radius: 5rem;
                     }
             
                     .editbtn:active {

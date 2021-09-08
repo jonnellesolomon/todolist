@@ -13,7 +13,7 @@
         <h2>Todolist</h2>
 
         <form method="POST" action="add.php">
-            <input type="text" name="task" class="task_input" required/>
+            <input type="text" name="task" class="task_input" placeholder="type here" required/>
             <button type="submit" class="task_btn" name="submit">Add</button> <br>
         </form>
         

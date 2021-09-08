@@ -1,7 +1,3 @@
-<?php 
-    include ("connection.php");
-    $task = $_GET['edit_task'];
-?>
 <html>
 <head>
     <link rel="stylesheet" type="text/css" href="style/style.css">
@@ -9,7 +5,7 @@
 </head>
     <h2 class="update_title">update your task</h2>
     <form class="update" method="POST">
-        <input class="update_i" type="text" name="task"  placeholder="update #<?php echo $task ?>" Required>
+        <input class="update_i" type="text" name="task"  placeholder="type here" Required>
         <input class="update_b" type="submit" name="update" value="Update">
     </form>
     <a class="cancel" href="index.php">Cancel</a>
